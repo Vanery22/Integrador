@@ -1,0 +1,193 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+   background: #353A40;
+   display: inline-block;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 10;
+  }
+
+.logo {
+   display: inherit;
+   font-size: 20px;
+  
+}
+
+.logo img {
+   height: 75px;
+   vertical-align: middle;
+   margin-left: 10px;
+   
+}
+
+.wrap{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(to right, rgb(0 0 0 / .5),  rgb(0 0 0 / .5) ), url(/assets/img/hawaii.jpg);
+   background-size: cover;
+   background-position: center;
+}
+.wrap-texto{
+   color: antiquewhite;
+   text-align: right;
+   width: 50%;
+   position: absolute; right: 100px;
+   font-size: 19px;
+ }
+
+h2 {
+   color: white;
+   display: inline-block;
+}
+
+nav {
+   float: right; 
+   padding: 35px;
+      
+}
+
+
+a {
+   color: white;
+   text-decoration: none;
+   padding: 5px;
+}
+
+
+.btn-succes{
+   background-color: #2EDA2B ;
+
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 50px;
+  
+}
+
+.titulo{
+  text-align: center;
+}
+
+h3,
+h4 {
+   text-align: left;
+}
+
+.btn-primary{
+   background-color: rgb(10, 158, 184) ;
+}
+.card {
+   width: 280px;
+   height: 600px;
+   margin: 10px;
+   border-radius: 5px;
+   padding: 10px;
+   /* display: inline-block;
+   padding: 20px; */
+}
+
+.card-image {
+   
+   height: 500px;
+   margin-bottom: 15px;
+   background-size: cover;
+  
+}
+
+.car-1{
+   background-image: url(/assets/img/steve.jpg);
+   
+}
+.car-2{
+   background-image: url(/assets/img/bill.jpg);
+   
+}
+.car-3{
+   background-image: url(/assets/img/ada.jpeg);
+   
+}
+
+.card .p{
+   display:flex;
+}
+
+.card:hover{
+   background-color: rgb(62 62 62 );
+   color: white;
+   cursor: pointer;
+   transform: scale(1.03);
+   transition: all 1s ease;
+}
+
+.izquierda{
+   background: url(/assets/img/honolulu.jpg);
+   background-size: cover;
+   background-position: center;
+   width: 50%;
+   height: 95%;
+
+   }
+   .derecha{
+   width: 50%;
+   height: 95%;
+   padding: 55px;
+   background-color: #353A40;
+   color: antiquewhite;
+   }
+   
+   #pantalla-dividida{
+      display: flex;
+     
+  }
+
+   .formulario {
+      text-align: center;
+      font-family:Arial, Helvetica, sans-serif;
+      color: #353A40;
+      padding: 50px;
+   }
+   .row{
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+   }
+   .textarea{
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+   }
+.btn-dark{
+   background-color: #70bf26 ;
+}
+
+footer{
+   background-color: #3d5983;
+   padding: 12px;
+   width: 100%;
+   position: absolute;
+   font-weight: 900;
+   display: flex;
+   font-size: 20px;
+   margin:10;
+   justify-content:space-around ;
+   
+  }
+
+  section {
+   height: 70vh;
+   position: relative;
+}
+
