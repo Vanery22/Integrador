@@ -1,31 +1,41 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/* HEADER
+------------------------- */
 
-header {
-   background: #353A40;
-   display: inline-block;
-   width: 100%;
-   position: fixed;
-   top: 0;
-   z-index: 10;
+.navbar-brand img { max-width: 100px;}
+
+.bg-dark { background: #333a40!important; height: 90px; }
+
+.navbar-dark .navbar-nav .btn-compra-tickets { color: #25a342; }
+
+@media (min-width: 992px) {
+  .btn-compra-tickets {
+    border: 1px solid transparent;
+    border-radius: .8rem;
   }
-
-.logo {
-   display: inherit;
-   font-size: 20px;
-  
+  .btn-compra-tickets:hover,
+  .navbar-dark .navbar-nav .btn-compra-tickets.active {
+    background: #25a342;
+  }
 }
 
-.logo img {
-   height: 75px;
-   vertical-align: middle;
-   margin-left: 10px;
-   
-}
+.pt-section { padding-top: 7rem; }
+
+/* TITULOS */
+
+.titulo-gral {
+   text-align: center;
+   font-weight: 400;
+   text-transform: uppercase;
+   font-size: 1rem;
+ }
+ .titulo-gral span {
+   display: block;
+   font-weight: 700;
+   font-size: 2.2rem;
+ } 
+ 
+
+/* SECCION DEL MEDIO */
 
 .wrap{
    width: 100vw;
@@ -44,32 +54,10 @@ header {
    position: absolute; right: 100px;
    font-size: 19px;
  }
+/* 
+ SECCION DE ORADORES */
 
-h2 {
-   color: white;
-   display: inline-block;
-}
-
-nav {
-   float: right; 
-   padding: 35px;
-      
-}
-
-
-a {
-   color: white;
-   text-decoration: none;
-   padding: 5px;
-}
-
-
-.btn-succes{
-   background-color: #2EDA2B ;
-
-}
-
-.container{
+#oradores{
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -77,52 +65,15 @@ a {
   
 }
 
-.titulo{
-  text-align: center;
-}
-
-h3,
-h4 {
-   text-align: left;
-}
-
-.btn-primary{
-   background-color: rgb(10, 158, 184) ;
-}
-.card {
+.card h-100 {
    width: 280px;
    height: 600px;
    margin: 10px;
    border-radius: 5px;
    padding: 10px;
-   /* display: inline-block;
-   padding: 20px; */
-}
-
-.card-image {
-   
-   height: 500px;
-   margin-bottom: 15px;
-   background-size: cover;
-  
-}
-
-.car-1{
-   background-image: url(../assets/img/steve.jpg);
-   
-}
-.car-2{
-   background-image: url(../assets/img/bill.jpg);
-   
-}
-.car-3{
-   background-image: url(../assets/img/ada.jpeg);
    
 }
 
-.card .p{
-   display:flex;
-}
 
 .card:hover{
    background-color: rgb(62 62 62 );
@@ -131,27 +82,16 @@ h4 {
    transform: scale(1.03);
    transition: all 1s ease;
 }
+  
+/* SECCION MITAD IMG, MITAD TEXTO
+-------------------------------------------------- */
 
-.izquierda{
-   background: url(../assets/img/honolulu.jpg);
-   background-size: cover;
-   background-position: center;
-   width: 50%;
-   height: 95%;
-
-   }
-   .derecha{
-   width: 50%;
-   height: 95%;
-   padding: 55px;
-   background-color: #353A40;
-   color: antiquewhite;
-   }
-   
-   #pantalla-dividida{
-      display: flex;
-     
-  }
+.bg-aside1 {
+   background: #333a40;
+   padding: 66px;
+ }
+ 
+/* FORMULARIO DEL INDEX CONVIERTETE EN ORADOR */
 
    .formulario {
       text-align: center;
@@ -169,25 +109,38 @@ h4 {
    justify-content: center;
    padding: 15px;
    }
-.btn-dark{
-   background-color: #70bf26 ;
-}
 
-footer{
-   background-color: #3d5983;
-   padding: 12px;
-   width: 100%;
-   position: absolute;
-   font-weight: 900;
-   display: flex;
-   font-size: 20px;
-   margin:10;
-   justify-content:space-around ;
+.btn-form {
+   background: #96c93e;
+   color: #fff !important;
+ }
+ .btn-form:hover { background: #74aa17; }
+
+ /* PAGINA DEL PAGO */
+
+#totalPago {
+   font-size: 1.4rem;
+   font-weight: 700;
+ }
+
+
+/* FOOTER */
+#main-footer {
+   background: rgb(40, 40, 77);
+   color: #fff;
+   padding: 2.5rem;
    
-  }
-
-  section {
-   height: 70vh;
-   position: relative;
+}
+#main-footer .nav-link {
+   color: #fff;
+   text-align: center;
 }
 
+#main-footer .nav-link:hover {
+   opacity: .7;
+}
+@media (min-width: 992px){
+   #main-footer .nav-link span {
+      display:block;
+   }
+}
